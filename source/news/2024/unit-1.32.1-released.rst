@@ -30,23 +30,3 @@ Unit-variables in NGINX JavaScript are constantly cached
 In **1.32.0** we added the possibility to access all Unit variables form inside NJS.
 
 As reported in GitHub issue `#1169 <https://github.com/nginx/unit/issues/1169>`__ the variables were cached and would hold the wrong value, which is not how this feature should work. With version 1.32.1, we have fixed this issue.
-
-
-==============
-Full Changelog
-==============
-
-.. code-block:: none
-
-    Changes with Unit 1.32.1                                         26 Mar 2024
-
-        *) Bugfix: NJS variables in templates may have incorrect values due to
-           improper caching.
-
-        *) Bugfix: Wasm application process hangs after receiving restart signal
-           from the control.
-
-
-
-For a full list of changes and bugfixes,
-please see the `changelog <../../../CHANGES.txt>`__.
